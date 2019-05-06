@@ -1,0 +1,18 @@
+﻿<Page x:Class="Chat.UI.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:controls="clr-namespace:HandyControl.Controls;assembly=HandyControl"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Login" x:ClassModifier="internal">
+
+    <StackPanel VerticalAlignment="Center">
+        <TextBox x:Name="RoomKey" controls:InfoElement.Placeholder="Room key" controls:InfoElement.Necessary="True" Style="{StaticResource TextBoxExtend}" Width="200" Margin="0, 0, 0, 5"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="ButtonEnterRoom" Content="Enter room" Margin="0, 0, 5, 0" Click="ButtonEnterRoom_OnClick"/>
+            <Button x:Name="ButtonCreateRoom" Content="Create room"/>
+        </StackPanel>
+    </StackPanel>
+</Page>
