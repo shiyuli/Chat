@@ -55,10 +55,10 @@ namespace Chat.Core
             for (int i = 0; i < consumerCount; i++)
             {
                 _channel.BasicPublish(
-                    exchange: _exchange,
-                    routingKey: _roomKey,
+                    exchange:        _exchange,
+                    routingKey:      _roomKey,
                     basicProperties: properties,
-                    body: body);
+                    body:            body);
             }
         }
 
